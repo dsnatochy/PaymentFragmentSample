@@ -62,9 +62,7 @@ public class MainActivity extends Activity {
         Payment payment = new Payment();
         // amount in cents
         payment.setAmount(1000l);
-
-        payment.setAuthzOnly(true);
-
+        
         TransactionReference posRefId = new TransactionReference();
         // "posReferenceId" is a predefined param which is searchable in Poynt HQ (merchant dashboard)
         posRefId.setCustomType("posReferenceId");
